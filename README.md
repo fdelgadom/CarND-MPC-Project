@@ -3,7 +3,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
-## Dependencies
+## Student describes their model in detail. This includes the state, actuators and update equations.
 
 * cmake >= 3.5
  * All OSes: [click here for installation instructions](https://cmake.org/install/)
