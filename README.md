@@ -1,6 +1,7 @@
 [//]: # (Image References)
 
 [image0]: Equations.png "Equations"
+[image1]: Transformations.png "Equations"
 
 
 # CarND-Controls-MPC
@@ -30,7 +31,7 @@ First I used the standard values N= 10 and dt=0.1, T= 1 second, but after increa
 
 * As recommended, waypoints are transformed to the vehicle's coordinate system with the convention that the heading of the vehicle system is towards the x-axis, and the starting point in the coordinate system is (0,0) and angle = 0º. This simplifies the calculation of the cross-track error (cte) and the orientation error (epsi).
 
-
+![Transformations][image1]
 
 ## Model Predictive Control with Latency
 
