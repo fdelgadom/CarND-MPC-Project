@@ -15,7 +15,9 @@ The model used is a kinematic one based on this equations:
 
 ![Equations][image0]
 
-[x,y,ψ,v] is the state of the vehicle, Lf is a physical characteristic of the vehicle, and [δ,a] are the actuators, or control inputs, to our system.
+* [x,y,ψ,v] is the state of the vehicle.
+* Lf is a physical characteristic of the vehicle, which measures the distance between the front of the vehicle and its center of gravity. The larger the vehicle , the slower the turn rate.
+* [δ,a] are the actuators or control inputs, to our system. Delta for steering angle and "a" for acceleration (positive or negative-braking) 
 
 
 ## Student discusses the reasoning behind the chosen N (timestep length) and dt (elapsed duration between timesteps) values. Additionally the student details the previous values tried.
