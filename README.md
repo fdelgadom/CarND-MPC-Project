@@ -22,11 +22,10 @@ The model used is a kinematic one based on this equations:
 
 ## Student discusses the reasoning behind the chosen N (timestep length) and dt (elapsed duration between timesteps) values. Additionally the student details the previous values tried.
 
+As mentioned in the lessons, a good approach to setting N, dt, and T is to first determine a reasonable range for T and then tune dt and N appropriately, keeping the effect of each in mind.
 
-1. Clone this repo.
-2. Make a build directory: `mkdir build && cd build`
-3. Compile: `cmake .. && make`
-4. Run it: `./mpc`.
+First I used the standard values N= 10 and dt=0.1, T= 1 second, but after increasing the reference speed to 100 mph it seems convenient to increase N to maintain the distance ahead the vehicle is considering. N is the determinant of the number of variables the optimized by MPC and as consequence the major driver of computational cost, but after testing it, there is no penalization.
+
 
 ## Polynomial Fitting and MPC Preprocessing
 
