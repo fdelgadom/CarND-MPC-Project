@@ -1,6 +1,6 @@
 [//]: # (Image References)
 
-[image0]: ./term2/CarND-MPC-Project-master/Equations.png "Equations"
+[image0]: ../term2/CarND-MPC-Project-master/Equations.png "Equations"
 [image1]: ./../master/tools/initial_position.png "waypoint_rotation.png"
 
 
