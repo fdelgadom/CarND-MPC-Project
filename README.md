@@ -13,7 +13,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 The model used is a kinematic one based on this equations:
 
-![Model Equations][image0]
+![Equations][image0]
 
 [x,y,ψ,v] is the state of the vehicle, Lf is a physical characteristic of the vehicle, and [δ,a] are the actuators, or control inputs, to our system.
 
