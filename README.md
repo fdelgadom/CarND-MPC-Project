@@ -35,4 +35,13 @@ First I used the standard values N= 10 and dt=0.1, T= 1 second, but after increa
 
 The latency is taken into account using the kinematic model equations, to simulate the state of the vehicle in 100 ms. 
 
-*
+* double pred_x   = v * latency;
+            double pred_y   = 0;
+            double pred_psi  = (- 1)* v * steer_value / Lf * latency;
+            double pred_v    = v + throttle_value * latency;
+            double pred_cte  = cte - v * sin(epsi) * latency;
+            double pred_epsi = epsi - v * steer_value / Lf * latency;
+            
+            and so the new state is:
+            state << pred_x, pred_y, pred_psi, pred_v, pred_cte, pred_epsi;
+
