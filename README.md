@@ -14,7 +14,7 @@ The model used is a kinematic one based on this equations:
 
 ![Equations][image0]
 
-* [x,y,ψ,v] is the state of the vehicle.
+* [x,y,ψ,v] is the state of the vehicle in time t and t+1
 * Lf is a physical characteristic of the vehicle, which measures the distance between the front of the vehicle and its center of gravity. The larger the vehicle , the slower the turn rate.
 * [δ,a] are the actuators or control inputs, to our system. Delta for steering angle and "a" for acceleration (positive or negative-braking) 
 
@@ -29,6 +29,8 @@ First I used the standard values N= 10 and dt=0.1, T= 1 second, but after increa
 ## Polynomial Fitting and MPC Preprocessing: If the student preprocesses waypoints, the vehicle state, and/or actuators prior to the MPC procedure it is described.
 
 * As recommended, waypoints are transformed to the vehicle's coordinate system with the convention that the heading of the vehicle system is towards the x-axis, and the starting point in the coordinate system is (0,0) and angle = 0º. This simplifies the calculation of the cross-track error (cte) and the orientation error (epsi).
+
+
 
 ## Model Predictive Control with Latency
 
