@@ -1,6 +1,6 @@
 [//]: # (Image References)
 
-[image0]: ..//CarND-MPC-Project-master/Equations.png "Equations"
+[image0]: Equations.png "Equations"
 
 
 # CarND-Controls-MPC
