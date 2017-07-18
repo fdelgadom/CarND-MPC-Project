@@ -27,13 +27,12 @@ As mentioned in the lessons, a good approach to setting N, dt, and T is to first
 First I used the standard values N= 10 and dt=0.1, T= 1 second, but after increasing the reference speed to 100 mph it seems convenient to increase N to maintain the distance ahead the vehicle is considering. N is the determinant of the number of variables the optimized by MPC and as consequence the major driver of computational cost, but after testing it, there is no penalization.
 
 
-## Polynomial Fitting and MPC Preprocessing
+## Polynomial Fitting and MPC Preprocessing: If the student preprocesses waypoints, the vehicle state, and/or actuators prior to the MPC procedure it is described.
 
-1. It's recommended to test the MPC on basic examples to see if your implementation behaves as desired. One possible example
-is the vehicle starting offset of a straight line (reference). If the MPC implementation is correct, after some number of timesteps
-(not too many) it should find and track the reference line.
-2. The `lake_track_waypoints.csv` file has the waypoints of the lake track. You could use this to fit polynomials and points and see of how well your model tracks curve. NOTE: This file might be not completely in sync with the simulator so your solution should NOT depend on it.
-3. For visualization this C++ [matplotlib wrapper](https://github.com/lava/matplotlib-cpp) could be helpful.
+* As recommended, waypoints are transformed to the vehicle's coordinate system with the convention that the heading of the vehicle system is towards the x-axis, and the starting point in the coordinate system is (0,0) and angle = 0º. This simplifies the calculation of the cross-track error (cte) and the orientation error (epsi).
 
 ## Model Predictive Control with Latency
 
+The latency is taken into account using the kinematic model equations, to simulate the state of the vehicle in 100 ms. 
+
+*
